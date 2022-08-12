@@ -12,11 +12,12 @@ import {CategoryMenuType, HomeScreenProps, ItemType} from './Home.types';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {CategoryMenuItems} from './menu';
 import {useDeviceOrientation, useDimensions} from '@react-native-community/hooks';
+import Config from 'react-native-config';
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
   const {landscape} = useDeviceOrientation();
   const {width} = useDimensions().window;
-
+  console.log('Config.GOOGLE_MAPS_API_KEY;:', Config.GOOGLE_MAPS_API_KEY);
   const imageStyle = {
     width: width / 2,
     height: undefined,

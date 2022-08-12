@@ -14,7 +14,6 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {icons} from './icons';
 
 library.add(icons);
-
 enableScreens();
 
 export type RootStackParamList = {

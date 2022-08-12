@@ -8,6 +8,7 @@ import ListItem from '../../components/ListItem/ListItem';
 import {useDeviceOrientation} from '@react-native-community/hooks';
 import {BackButton} from '../../components/BackButton/BackButton';
 import Modal from 'react-native-modal';
+import Config from 'react-native-config';
 
 export const ListScreen: React.FC<ListScreenProps> = ({navigation, route}) => {
   const {category = {name: ''}} = route.params;

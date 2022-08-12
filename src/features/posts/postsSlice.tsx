@@ -1,7 +1,7 @@
-import { createSlice, Dispatch, PayloadAction } from "@reduxjs/toolkit";
-import { API } from "../../api/client";
-import { ErrorResponseT, fetchPostParams, ImageResponseWithPage } from "../../api/client.types";
-import { PostT } from "../../screens/List/List.types";
+import {createSlice, Dispatch, PayloadAction} from '@reduxjs/toolkit';
+import {API} from '../../api/client';
+import {ErrorResponseT, fetchPostParams, ImageResponseWithPage} from '../../api/client.types';
+import {PostT} from '../../screens/List/List.types';
 
 // Define a type for the slice state
 interface PostsState {
