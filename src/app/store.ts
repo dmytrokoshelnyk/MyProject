@@ -1,13 +1,11 @@
 import {applyMiddleware, configureStore} from '@reduxjs/toolkit';
-// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
 const createDebugger = require('redux-flipper').default;
 
-import counterReducer from '../features/counter/counterSlice';
 import postReducer from '../features/posts/postsSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
     posts: postReducer,
   },
   middleware: getDefaultMiddleware => {
